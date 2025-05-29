@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Moon, Sun, Menu, X, Share2, Download, Calendar, MapPin, Clock } from "lucide-react"
+import { Moon, Sun, Menu, X, Share2, Download } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -33,7 +33,7 @@ export default function EidUlAdhaPage() {
     }
 
     const handleScroll = () => {
-      const sections = ["home", "greetings", "card-maker", "recipes", "calendar", "qibla"]
+      const sections = ["home", "greetings", "card-maker", "recipes"]
 
       for (const section of sections) {
         const element = document.getElementById(section)
@@ -102,8 +102,6 @@ export default function EidUlAdhaPage() {
     { id: "greetings", label: "Greetings" },
     { id: "card-maker", label: "Card Maker" },
     { id: "recipes", label: "Recipes" },
-    { id: "calendar", label: "Calendar" },
-    { id: "qibla", label: "Qibla" },
   ]
 
   return (
@@ -341,7 +339,7 @@ export default function EidUlAdhaPage() {
             <RecipeCarousel />
           </motion.div>
         </section>
-
+      </main>
 
       {/* Footer */}
       <footer className="bg-gradient-to-r from-emerald-900 to-amber-900 text-white py-12">
@@ -1069,4 +1067,3 @@ function RecipeCarousel() {
     </Card>
   )
 }
-
