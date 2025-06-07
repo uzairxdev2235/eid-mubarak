@@ -241,6 +241,15 @@ export default function EidUlAdhaPage() {
                 Eid ul Adha Mubarak
               </span>
             </motion.h1>
+            
+            <motion.div
+              className="text-lg md:text-xl text-emerald-600 dark:text-emerald-400 font-medium mb-10"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              From: {fromName}
+            </motion.div>
 
             <motion.p
               className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8"
@@ -251,15 +260,6 @@ export default function EidUlAdhaPage() {
               May Allah accept your sacrifice and bless you with His divine grace. Eid ul Adha commemorates the
               willingness of Ibrahim (AS) to sacrifice his son as an act of obedience to Allah.
             </motion.p>
-
-            <motion.div
-              className="text-lg md:text-xl text-emerald-600 dark:text-emerald-400 font-medium mb-10"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.8, delay: 0.6 }}
-            >
-              From: {fromName}
-            </motion.div>
 
             <EidCountdown />
 
