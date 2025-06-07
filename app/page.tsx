@@ -243,7 +243,7 @@ export default function EidUlAdhaPage() {
             </motion.h1>
             
             <motion.div
-  className="text-lg md:text-xl text-emerald-600 dark:text-emerald-400 font-semibold mb-10 tracking-wide"
+  className="text-lg md:text-xl text-emerald-600 dark:text-emerald-400 font-medium mb-10 tracking-wide"
   initial={{ opacity: 0, y: 20, scale: 0.95 }}
   animate={{ opacity: 1, y: 0, scale: 1 }}
   transition={{
@@ -252,9 +252,8 @@ export default function EidUlAdhaPage() {
     scale: { duration: 0.6, delay: 0.6, ease: "easeOut" },
   }}
 >
-  <span className="border-b-2 border-emerald-400 pb-1 inline-block">
-    From: <span className="italic">{fromName}</span>
-  </span>
+  <span className="text-sm opacity-70 mr-1">From:</span>
+  <span className="text-xl md:text-2xl font-semibold italic">{fromName}</span>
 </motion.div>
 
             <motion.p
